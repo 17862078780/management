@@ -1,4 +1,4 @@
-package common.util;
+package com.sunniwell.common.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
