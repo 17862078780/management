@@ -1,6 +1,6 @@
 package com.sunniwell;
 
-import com.sunniwell.common.util.JwtUtil;
+import com.sunniwell.common.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -35,6 +35,7 @@ public class JwtFilter extends HandlerInterceptorAdapter {
         if(!"admin".equals(claims.get("roles"))){
             return new Result(false,StatusCode.ACCESSERROR,"权限不足");
         }*/
+//        解析token
         if(authHeader!=null&&authHeader.startsWith("Bearer ")){
             String token = authHeader.substring(7);
             Claims claims = jwtUtil.parseJWT(token);

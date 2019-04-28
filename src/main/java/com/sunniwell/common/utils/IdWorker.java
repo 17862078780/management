@@ -1,4 +1,4 @@
-package com.sunniwell.common.util;
+package com.sunniwell.common.utils;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;

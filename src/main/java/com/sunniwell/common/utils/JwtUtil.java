@@ -1,9 +1,10 @@
-package com.sunniwell.common.util;
+package com.sunniwell.common.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.Date;
 
@@ -12,8 +13,9 @@ import java.util.Date;
  * @Date: 2019/4/23 16:53
  * @Description: jwt工具类
  */
+@ConfigurationProperties("jwt.config")
 public class JwtUtil {
-
+    public static final String TOKEN_PREFIX = "Bearer ";
     private String key ;
     private long ttl ;//一个小时
     public String getKey() {
@@ -47,7 +49,7 @@ public class JwtUtil {
         if (ttl > 0) {
             builder.setExpiration( new Date( nowMillis + ttl));
         }
-        return builder.compact();
+        return TOKEN_PREFIX+ builder.compact();
     }
 
     /**

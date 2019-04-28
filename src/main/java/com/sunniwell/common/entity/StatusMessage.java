@@ -1,4 +1,4 @@
-package com.sunniwell.common;
+package com.sunniwell.common.entity;
 
 /**
  * @Auther: 孟德坤

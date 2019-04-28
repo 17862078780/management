@@ -1,4 +1,4 @@
-package com.sunniwell.common;
+package com.sunniwell.common.entity;
 
 import lombok.Getter;
 import lombok.Setter;
