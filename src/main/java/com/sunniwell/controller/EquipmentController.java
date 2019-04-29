@@ -8,6 +8,7 @@ import com.sunniwell.common.entity.pojo.Role;
 import com.sunniwell.servece.EquipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -30,8 +31,11 @@ public class EquipmentController {
      */
     @PostMapping
     public Object add(@RequestBody Equipment equipment) {
+        if (equipment!=null){
         equipmentService.add(equipment);
         return new Result(true, StatusCode.OK,"保存成功");
+        }
+        return new Result(true, StatusCode.ERROR,"新增失败");
     }
 
     /**
@@ -40,7 +44,12 @@ public class EquipmentController {
      */
     @PutMapping
     public Object update(@RequestBody Equipment equipment) {
+
+        if(!StringUtils.isEmpty(equipment.get_id())){
+
         return new Result(true, StatusCode.OK,"修改成功");
+        }
+        return new Result(true, StatusCode.ERROR,"数据提交错误");
     }
 
     /**
@@ -49,13 +58,40 @@ public class EquipmentController {
      * @return
      */
     @DeleteMapping("/{id}")
-    public Object delete(@PathVariable String id) {
+    public Object delete(@PathVariable String id ) {
         return new Result(true, StatusCode.OK,"删除成功");
     }
+
+    /**
+     * 动态条件分页查询
+     * @param page
+     * @param size
+     * @param searchMap
+     * @return
+     */
     @PostMapping(value = "/search/{page}/{size}")
     public Result comment(@PathVariable int page,@PathVariable int size,@RequestBody Map<String,String> searchMap){
-        PageResult pageResult = equipmentService.search( searchMap, page, size);;
+        PageResult pageResult = equipmentService.search( searchMap, page, size);
         return new Result(true, StatusCode.OK,"查询成功",pageResult);
+    }
+
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public Object finOne(@PathVariable String id ) {
+
+        if (!StringUtils.isEmpty(id)){
+
+       Equipment equipment =  equipmentService.findOne(id);
+
+        return new Result(true, StatusCode.OK,"查询成功",equipment);
+        }
+
+        return new Result(true, StatusCode.ERROR,"系统错误");
+
     }
 
 }

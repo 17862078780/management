@@ -2,20 +2,16 @@ package com.sunniwell.servece.impl;
 
 import com.sunniwell.common.entity.PageResult;
 import com.sunniwell.common.entity.pojo.Equipment;
-import com.sunniwell.common.entity.pojo.Role;
 import com.sunniwell.dao.EquipmentDao;
 import com.sunniwell.servece.EquipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -32,7 +28,10 @@ public class EquipmentServiceImpl implements EquipmentService {
     private MongoTemplate mongoTemplate;
     @Override
     public PageResult<Equipment> search(Map<String, String> searchMap, int page, int size) {
-
+        //排序
+        Sort sort = Sort.by(Sort.Direction.DESC, "createTime");
+        //分页信息
+        Pageable pageable = PageRequest.of(page, size, sort);
         Query query = new Query();
         Criteria criteria = new Criteria();
         // 多字段查询
@@ -73,11 +72,6 @@ public class EquipmentServiceImpl implements EquipmentService {
             criteria.andOperator(lt);
         }
 
-        List<Sort.Order> orders = new ArrayList<Sort.Order>();  //排序
-
-
-        orders.add(new Sort.Order(Sort.Direction.DESC, "createdTime"));
-        // 排序
         query.addCriteria(criteria);
         Long count = mongoTemplate.count(query, Equipment.class);
         // 查询
@@ -93,5 +87,11 @@ public class EquipmentServiceImpl implements EquipmentService {
     @Override
     public void add(Equipment equipment) {
       equipmentDao.save(equipment);
+    }
+
+    @Override
+    public Equipment findOne(String id) {
+
+        return equipmentDao.findById(id).get();
     }
 }
