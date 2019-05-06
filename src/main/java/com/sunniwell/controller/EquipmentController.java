@@ -4,10 +4,8 @@ import com.sunniwell.common.entity.PageResult;
 import com.sunniwell.common.entity.Result;
 import com.sunniwell.common.entity.StatusCode;
 import com.sunniwell.common.entity.pojo.Equipment;
-import com.sunniwell.common.entity.pojo.Role;
 import com.sunniwell.servece.EquipmentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -59,7 +57,13 @@ public class EquipmentController {
      */
     @DeleteMapping("/{id}")
     public Object delete(@PathVariable String id ) {
+        if (!StringUtils.isEmpty(id)){
+
+        equipmentService.deleteById(id);
         return new Result(true, StatusCode.OK,"删除成功");
+        }
+        return new Result(true, StatusCode.ERROR,"删除成功");
+
     }
 
     /**

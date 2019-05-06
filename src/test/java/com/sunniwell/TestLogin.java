@@ -41,4 +41,10 @@ public class TestLogin {
 
 
     }
+
+    @Test
+    public void findBuName(){
+        User admin = userDao.findByUsername("admin").get();
+        System.out.println(admin);
+    }
 }

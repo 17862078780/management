@@ -16,4 +16,6 @@ public interface EquipmentService {
     void add(Equipment equipment);
 
     Equipment findOne(String id);
+
+    void deleteById(String id);
 }

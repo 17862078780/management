@@ -1,6 +1,6 @@
 jwt:
   config:
-    key: itcast  # 盐
+    key: sunniwell  # 盐
     ttl: 3600000  # 1000*60*60
 server:
   port: 8082

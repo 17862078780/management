@@ -12,4 +12,10 @@ public interface UserService {
     User logoIn(String loginname, String password);
 
     Object register(User user);
+
+    User findOne(String id);
+
+    void update(User user);
+
+    void deleteById(String id);
 }

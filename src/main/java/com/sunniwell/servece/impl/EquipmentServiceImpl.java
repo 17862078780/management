@@ -94,4 +94,9 @@ public class EquipmentServiceImpl implements EquipmentService {
 
         return equipmentDao.findById(id).get();
     }
+
+    @Override
+    public void deleteById(String id) {
+        equipmentDao.deleteById(id);
+    }
 }
