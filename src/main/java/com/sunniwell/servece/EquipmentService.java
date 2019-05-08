@@ -2,6 +2,7 @@ package com.sunniwell.servece;
 
 import com.sunniwell.common.entity.PageResult;
 import com.sunniwell.common.entity.pojo.Equipment;
+import com.sunniwell.common.entity.pojo.EquipmentReqVO;
 
 import java.util.Map;
 
@@ -11,11 +12,13 @@ import java.util.Map;
  * @Description:
  */
 public interface EquipmentService {
-    PageResult<Equipment> search(Map<String, String> searchMap, int page, int size);
+    PageResult<Equipment> search(EquipmentReqVO equipmentReqVO);
 
     void add(Equipment equipment);
 
     Equipment findOne(String id);
 
     void deleteById(String id);
+
+    void update(Equipment equipment);
 }

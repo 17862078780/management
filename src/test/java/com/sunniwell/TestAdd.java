@@ -38,8 +38,8 @@ public class TestAdd {
             e.setModel("one");
             e.setSn(UUID.randomUUID().toString());
             e.setMac(UUID.randomUUID().toString());
-            e.setVersion("1.0");
-            e.setStats("1");
+            e.setVersion("2.0.0");
+            e.setStats("离线");
             e.setRegistrationTime(new Date());
             e.setActiveTime(new Date());
             e.setDesc(

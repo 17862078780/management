@@ -1,14 +1,18 @@
 package com.sunniwell.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.sunniwell.common.entity.PageResult;
 import com.sunniwell.common.entity.Result;
 import com.sunniwell.common.entity.StatusCode;
 import com.sunniwell.common.entity.pojo.Equipment;
+import com.sunniwell.common.entity.pojo.EquipmentReqVO;
 import com.sunniwell.servece.EquipmentService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -30,6 +34,12 @@ public class EquipmentController {
     @PostMapping
     public Object add(@RequestBody Equipment equipment) {
         if (equipment!=null){
+            if (equipment.getActiveTime()==null){
+                equipment.setActiveTime(new Date());
+            }
+            if (equipment.getRegistrationTime()==null){
+                equipment.setRegistrationTime(new Date());
+            }
         equipmentService.add(equipment);
         return new Result(true, StatusCode.OK,"保存成功");
         }
@@ -40,11 +50,12 @@ public class EquipmentController {
      * 修改
      * @return
      */
-    @PutMapping
-    public Object update(@RequestBody Equipment equipment) {
+    @PutMapping("/{id}")
+    public Object update(@RequestBody Equipment equipment,@PathVariable String id ) {
 
-        if(!StringUtils.isEmpty(equipment.get_id())){
-
+        if(!StringUtils.isEmpty(id)){
+            equipment.set_id(id);
+        equipmentService.update(equipment);
         return new Result(true, StatusCode.OK,"修改成功");
         }
         return new Result(true, StatusCode.ERROR,"数据提交错误");
@@ -75,7 +86,10 @@ public class EquipmentController {
      */
     @PostMapping(value = "/search/{page}/{size}")
     public Result comment(@PathVariable int page,@PathVariable int size,@RequestBody Map<String,String> searchMap){
-        PageResult pageResult = equipmentService.search( searchMap, page, size);
+        EquipmentReqVO equipmentReqVO = JSON.parseObject(JSON.toJSONString(searchMap), EquipmentReqVO.class);
+        equipmentReqVO.setPage(page-1);
+        equipmentReqVO.setSize(size);
+        PageResult pageResult = equipmentService.search(equipmentReqVO);
         return new Result(true, StatusCode.OK,"查询成功",pageResult);
     }
 
