@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="673f7d25-9c62-4b97-bcd2-6e708852ffd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/ChildRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Router.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RolerDaO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/ExecutorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/ExecutorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/StatusMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/StatusMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/ChildRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/ChildRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Equipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/BaseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/BaseExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/EquipmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Router.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/servece/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/servece/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sunniwell/servece/impl/userServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sunniwell/servece/impl/userServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sunniwell/TestAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sunniwell/TestAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sunniwell/TestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sunniwell/TestLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sunniwell/TestQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sunniwell/TestQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,22 +23,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/controller/EquipmentController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/controller/RoleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="528">
+              <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+              <folding>
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#1074#1075#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/controller/RoleController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Role.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="62" column="46" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="46" />
+            <state relative-caret-position="308">
+              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="45" />
               <folding>
-                <element signature="e#1013#1014#0" expanded="true" />
-                <element signature="e#1074#1075#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,20 +61,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RolerDaO.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RoleDaO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="220">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/EquipmentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="220">
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Router.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="141">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,46 +98,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/servece/impl/userServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/EquipmentReqVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="52" column="25" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="25" />
+            <state relative-caret-position="484">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1157#1158#0" expanded="true" />
-                <element signature="e#1207#1208#0" expanded="true" />
-                <element signature="e#1259#1260#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-                <element signature="e#1348#1349#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/UserDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RouterDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="220">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Equipment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="106" column="26" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="26" />
+            <state relative-caret-position="357">
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/servece/UserService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/ChildRouter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="264">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,10 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/common/StatusMessage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/JwtTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/util/IdWorker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UserApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/StatusCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/util/JwtUtil.java" />
@@ -208,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/UserApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestLongin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/utils/JwtUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Equipment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/EquipmentCtroller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/RoleCtroller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/servece/RoleService.java" />
@@ -239,14 +228,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/BaseExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sunniwell/TestLogin.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sunniwell/TestQuery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Router.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/servece/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/servece/impl/userServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/StatusMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RolerDaO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RoleDaO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RouterDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Router.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Equipment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/ChildRouter.java" />
       </list>
     </option>
   </component>
@@ -578,7 +572,7 @@
       <workItem from="1557141994209" duration="98000" />
       <workItem from="1557142114271" duration="5577000" />
       <workItem from="1557201621866" duration="40223000" />
-      <workItem from="1557464426955" duration="12082000" />
+      <workItem from="1557464426955" duration="14299000" />
     </task>
     <task id="LOCAL-00001" summary="2019年4月23日14:33:09">
       <created>1556001202652</created>
@@ -629,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557277358630</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="角色的增删改查">
+      <created>1557479733122</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557479733122</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -665,7 +666,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156190000" />
+    <option name="totallyTimeSpent" value="158407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -677,8 +678,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18996799" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -760,16 +760,10 @@
     <MESSAGE value="批量插入优化到11秒" />
     <MESSAGE value="登录登出的实现和设备管理的crud操作" />
     <MESSAGE value="优化设备列表动态查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化设备列表动态查询" />
+    <MESSAGE value="角色的增删改查" />
+    <option name="LAST_COMMIT_MESSAGE" value="角色的增删改查" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.6.RELEASE/spring-data-commons-2.0.6.RELEASE-sources.jar!/org/springframework/data/domain/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/2.0.6.RELEASE/spring-data-mongodb-2.0.6.RELEASE-sources.jar!/org/springframework/data/mongodb/repository/MongoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-82">
@@ -788,16 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="90" column="55" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/EquipmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,31 +912,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/EquipmentReqVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Equipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,16 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/ChildRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,16 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/sunniwell/TestQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -1107,16 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Router.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1160,17 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="62" column="46" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="46" />
-          <folding>
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/servece/impl/RoleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1183,10 +1106,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RolerDaO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/EquipmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="220">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RoleDaO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/dao/RouterDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+          <folding>
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/EquipmentReqVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/Equipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sunniwell/common/entity/pojo/ChildRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

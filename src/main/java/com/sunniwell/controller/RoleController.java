@@ -3,6 +3,7 @@ package com.sunniwell.controller;
 import com.sunniwell.common.entity.PageResult;
 import com.sunniwell.common.entity.Result;
 import com.sunniwell.common.entity.StatusCode;
+import com.sunniwell.common.entity.StatusMessage;
 import com.sunniwell.common.entity.pojo.Role;
 import com.sunniwell.servece.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ public class RoleController {
      */
     @PostMapping
     public Object add(@RequestBody Role rele) {
-        return new Result(true, StatusCode.OK,"保存成功");
+        return new Result(true, StatusCode.OK, StatusMessage.OK);
     }
 
     /**
