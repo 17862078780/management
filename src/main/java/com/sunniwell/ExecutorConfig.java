@@ -14,7 +14,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * @Auther: 孟德坤
  * @Date: 2019/4/29 13:26
- * @Description: 线程配置类
+ * @Description: 线程配置类 作用于多线程的异步操作
  *
  */
 @Configuration

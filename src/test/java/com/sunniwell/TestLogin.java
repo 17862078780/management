@@ -1,5 +1,6 @@
 package com.sunniwell;
 
+import com.sunniwell.common.entity.pojo.Role;
 import com.sunniwell.common.entity.pojo.User;
 import com.sunniwell.dao.UserDao;
 import org.junit.Test;
@@ -28,13 +29,16 @@ public class TestLogin {
     public void test01(){
         User u = new User();
         u.setUsername("admin");
-        u.setPassword(encoder.encode("admin"));
-        u.setAddresss("地址");
+        u.setPassword(encoder.encode("111111"));
+        u.setAddress("地址");
         u.setAvatar("头像地址");
         u.setBirthday(new Date());
         u.setInterest("这是一个爱好");
         u.setMobile("1223333");
-        u.setRole("ROLE_ADMIN");
+        Role role = new Role();
+        role.setName("admin");
+        role.setDesc("超级管理员");
+        u.setRole(role);
         u.setSex("男");
         userDao.save(u);
         System.err.println("保存完成");

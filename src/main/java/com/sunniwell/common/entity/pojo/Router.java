@@ -1,32 +1,30 @@
 package com.sunniwell.common.entity.pojo;
 
-/**
- * @Auther: 孟德坤
- * @Date: 2019/4/28 14:51
- * @Description:
- */
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
+/**
+ * @Auther: 孟德坤
+ * @Date: 2019/5/10 13:40
+ * @Description: 一级路由
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "role")
-    public class Role {
+public class Router {
     @Id
     private String rid;
+    private String path;
+    private String component;
+    private String redirect;
     private String name;
-//    对应中文描述eg超级管理员
-    private String desc;
-//    对应资源
+    private Object meta;
+    private Boolean hidden;
     @DBRef
-    private List<Router> resource;
-
+    private List<ChildRouter> children;
 }

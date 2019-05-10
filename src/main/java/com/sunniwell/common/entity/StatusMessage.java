@@ -6,7 +6,9 @@ package com.sunniwell.common.entity;
  * @Description:
  */
 public class StatusMessage {
-    public static final String OK="成功";
+    public static final String OK="操作成功";
+    public static final String PARAMSERROR="参数错误";
+
     public static final String ERROR ="失败";
     public static final String LOGINERROR ="用户名或密码错误";//用户名或密码错误
     public static final String ACCESSERROR ="权限不足";//权限不足

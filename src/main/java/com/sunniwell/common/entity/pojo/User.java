@@ -1,10 +1,15 @@
 package com.sunniwell.common.entity.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.scheduling.annotation.Async;
+
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Auther: 孟德坤
@@ -24,7 +29,8 @@ public class User implements Serializable {
     private String mobile;//手机号码
     private Date birthday;//出生日期
     private String interest;//兴趣
-    private String addresss;
+    private String address;//住址
 //    角色
-    private String role;
+    @DBRef
+    private Role role;
 }

@@ -81,12 +81,10 @@ public class EquipmentController {
      * 动态条件分页查询
      * @param page
      * @param size
-     * @param searchMap
      * @return
      */
     @PostMapping(value = "/search/{page}/{size}")
-    public Result comment(@PathVariable int page,@PathVariable int size,@RequestBody Map<String,String> searchMap){
-        EquipmentReqVO equipmentReqVO = JSON.parseObject(JSON.toJSONString(searchMap), EquipmentReqVO.class);
+    public Result comment(@PathVariable int page,@PathVariable int size,@RequestBody EquipmentReqVO equipmentReqVO){
         equipmentReqVO.setPage(page-1);
         equipmentReqVO.setSize(size);
         PageResult pageResult = equipmentService.search(equipmentReqVO);

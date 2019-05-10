@@ -9,8 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @Auther: 孟德坤
@@ -54,7 +52,13 @@ public class RoleController {
     public Object delete(@PathVariable String id) {
         return new Result(true, StatusCode.OK,"删除成功");
     }
-    @GetMapping(value = "/{page}/{size}")
+    /**
+     *
+     * 功能描述:角色分页查询
+     * @auther: 孟德坤
+     * @date: 2019/5/10 16:55
+     */
+    @GetMapping("/{page}/{size}")
     public Result comment(@PathVariable int page,@PathVariable int size){
         Page<Role> page1 = roleService.findAll(page, size);
         PageResult pageResult = new PageResult(page1.getTotalElements(),page1.getContent());

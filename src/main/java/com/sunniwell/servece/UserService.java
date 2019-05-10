@@ -1,6 +1,7 @@
 package com.sunniwell.servece;
 
 
+import com.sunniwell.common.entity.PageResult;
 import com.sunniwell.common.entity.pojo.User;
 
 /**
@@ -18,4 +19,6 @@ public interface UserService {
     void update(User user);
 
     void deleteById(String id);
+
+    PageResult search(User user, int i, int size);
 }

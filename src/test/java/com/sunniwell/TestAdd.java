@@ -15,7 +15,7 @@ import java.util.*;
 /**
  * @Auther: 孟德坤
  * @Date: 2019/4/28 16:33
- * @Description:模拟插入100万条设备数据第一版
+ * @Description:模拟插入设备数据第一版
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -38,8 +38,8 @@ public class TestAdd {
             e.setModel("one");
             e.setSn(UUID.randomUUID().toString());
             e.setMac(UUID.randomUUID().toString());
-            e.setVersion("2.0.0");
-            e.setStats("离线");
+            e.setVersion("1.0.0");
+            e.setStats("在线");
             e.setRegistrationTime(new Date());
             e.setActiveTime(new Date());
             e.setDesc(
