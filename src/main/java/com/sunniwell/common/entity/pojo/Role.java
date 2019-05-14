@@ -27,7 +27,6 @@ import java.util.List;
 //    对应中文描述eg超级管理员
     private String desc;
 //    对应资源
-    @DBRef
     private List<Router> resource;
 
 }

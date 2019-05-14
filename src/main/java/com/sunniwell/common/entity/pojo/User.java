@@ -31,6 +31,5 @@ public class User implements Serializable {
     private String interest;//兴趣
     private String address;//住址
 //    角色
-    @DBRef
     private Role role;
 }
