@@ -29,7 +29,7 @@ public class TestLogin {
     public void test01(){
         User u = new User();
         u.setUsername("admin");
-        u.setPassword(encoder.encode("111111"));
+        u.setPassword(encoder.encode("admin"));
         u.setAddress("地址");
         u.setAvatar("头像地址");
         u.setBirthday(new Date());

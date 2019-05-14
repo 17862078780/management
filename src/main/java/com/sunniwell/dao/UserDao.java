@@ -11,7 +11,7 @@ import java.util.Optional;
  * @Date: 2019/4/28 11:16
  * @Description:
  */
-public interface UserDao extends MongoRepository<User,Long> {
+public interface UserDao extends MongoRepository<User,String> {
 
     Optional<User> findByUsername(String username);
 
